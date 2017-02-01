@@ -9,7 +9,7 @@
     "magento/module-catalog-inventory": "100.0.*",
     "magento/module-store": "100.0.*",
     "magento/framework": "100.0.*",
-    "psr/log": "100.0.*"
+    "psr/log": "*"
   },
   "type": "magento2-module",
   "version": "0.0.1",
