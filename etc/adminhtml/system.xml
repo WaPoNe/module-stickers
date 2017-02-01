@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="wapone" translate="label" sortOrder="1000">
+            <label>WaPoNe</label>
+        </tab>
+        <section id="stickers" translate="label" type="text"
+                 sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Stickers</label>
+            <tab>wapone</tab>
+            <resource>WaPoNe_Stickers::config_stickers</resource>
+            <group id="stickers_page" translate="label" type="text"
+                   sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Stickers page settings</label>
+                <field id="discount_activation" translate="label" type="select"
+                       sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Activation</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="discount_calculation" translate="label" type="radios"
+                       sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Discount Calculation</label>
+                    <source_model>WaPoNe\Stickers\Model\Config\Backend\DiscountCalculationType</source_model>
+                    <comment>
+                        <![CDATA[<br />
+                        <strong>Manual</strong>: it will be shown discount image or discount label<br />
+                        <strong>Automatic</strong>: it will be shown discount calculated by the system; it is possible to select only sticker background and text color.
+                        ]]>
+                    </comment>
+                </field>
+                <field id="discount_category" translate="label" type="multiselect"
+                       sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Discount Product Category</label>
+                    <source_model>WaPoNe\Stickers\Model\Config\Backend\Categorylist</source_model>
+                </field>
+                <field id="discount_sticker_type" translate="label" type="radios"
+                       sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sticker Type</label>
+                    <source_model>WaPoNe\Stickers\Model\Config\Backend\StickerType</source_model>
+                </field>
+                <field id="discount_image" translate="label" type="image"
+                       sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Discount Image</label>
+                    <comment>Allowed file types: jpg, jpeg, gif, png</comment>
+                    <backend_model>WaPoNe\Stickers\Model\Config\Backend\Image</backend_model>
+                    <base_url type="media" scope_info="1">wapone/stickers/images</base_url>
+                </field>
+                <field id="discount_first_label" translate="label" type="text"
+                       sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>First Label</label>
+                    <comment>First label to show in the discount sticker (max 6 chars)</comment>
+                </field>
+                <field id="discount_second_label" translate="label" type="text"
+                       sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Second Label</label>
+                    <comment>Second label to show in the discount sticker (max 6 chars)</comment>
+                </field>
+                <field id="discount_sticker_background" translate="label" type="text"
+                       sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sticker Background Color</label>
+                    <comment>Sticker background color (Exadecimal value, without #: ex. FFFFFF)</comment>
+                </field>
+                <field id="discount_sticker_text" translate="label" type="text"
+                       sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Sticker Text Color</label>
+                    <comment>Sticker text color (Exadecimal value, without #: ex. FFFFFF)</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

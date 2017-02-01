@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <stickers>
+            <stickers_discount_page>
+                <discount_activation>1</discount_activation>
+                <discount_calculation>manual</discount_calculation>
+                <discount_sticker_type>image</discount_sticker_type>
+                <discount_first_label>Discount</discount_first_label>
+                <discount_sticker_background>FF0000</discount_sticker_background>
+                <discount_sticker_text>FFFFFF</discount_sticker_text>
+            </stickers_discount_page>
+        </stickers>
+    </default>
+</config>

@@ -1,0 +1,19 @@
+<?php
+if($block->isDiscountActive()):
+    $productDiscountBlock = $block->setDiscountStickerHTML();
+    ?>
+
+<script type="text/x-magento-init">
+    {
+        "*":{
+            "viewPageDiscount":{
+                "imageTag": {
+                  "imagePath": "<?php /* @escapeNotVerified */  echo $productDiscountBlock; ?>"
+                }
+            }
+        }
+    }
+</script>
+
+<?php
+    endif;

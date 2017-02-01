@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\CatalogWidget\Block\Product\ProductsList">
+        <plugin name="WaPoNe_WidgetStickersPlugin"
+                type="WaPoNe\Stickers\Plugin\Catalog\Widget\StickersPlugin" />
+    </type>
+    <!--type name="Magento\Catalog\Block\Product\ListProduct">
+        <plugin name="WaPoNe_CategoryStickersPlugin" type="WaPoNe\Stickers\Plugin\CategoryStickersPlugin"/>
+    </type-->
+    <virtualType name="Magento\CatalogSearch\Block\SearchResult\ListProduct">
+        <plugin name="WaPoNe_CategoryStickersPluginVirtual"
+                type="WaPoNe\Stickers\Plugin\ProductStickersPlugin" />
+    </virtualType>
+    <type name="Magento\Catalog\Block\Product\AbstractProduct">
+        <plugin name="WaPoNe_ProductStickersPlugin" type="WaPoNe\Stickers\Plugin\ProductStickersPlugin"/>
+    </type>
+</config>

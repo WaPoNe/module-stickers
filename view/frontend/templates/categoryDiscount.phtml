@@ -1,0 +1,27 @@
+<?php
+if($block->isDiscountActive()):
+    $discountImage = "<div class='wapone-sticker-wrapper top-right'>";
+    $discountImage .= "<img class='categoryDiscountImage' alt='".__('Discount')."' src='".$this->getUrl('pub/media')."wapone/stickers/images/".$block->getStickerImage()."' />";
+    $discountImage .= "</div>";
+    $discountArea = "<div class='wapone-sticker-wrapper top-right'>";
+    $discountArea .= "<div class='wapone-sticker discount-product";
+    if ($block->isAutomaticMode()) $discountArea .= " automatic";
+    $discountArea .= "' style='background-color: #".$block->getStickerBackground()."; color: #".$block->getStickerText().";'></div>";
+    $discountArea .= "</div>";
+?>
+
+<script type="text/x-magento-init">
+    {
+        "*":{
+            "categoryPageDiscount":{
+                "imageTag": {
+                  "discountImage": "<?php /* @escapeNotVerified */  echo $discountImage; ?>",
+                  "discountArea": "<?php /* @escapeNotVerified */  echo $discountArea; ?>"
+                }
+            }
+        }
+    }
+</script>
+
+<?php
+    endif;

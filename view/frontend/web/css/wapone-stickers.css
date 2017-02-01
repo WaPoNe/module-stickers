@@ -1,0 +1,82 @@
+.product.media {
+    position: relative;
+}
+
+.wapone-sticker-wrapper {
+    position: absolute;
+    z-index: 1;
+    transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -webkit-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    font-family: 'Oswald', sans-serif;
+    text-transform:uppercase;
+}
+
+.wapone-sticker {
+    font-size: 16px;
+    line-height: 1em;
+    display: table-cell !important;
+    vertical-align: middle !important;
+    transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -webkit-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+}
+
+.wapone-sticker-wrapper.top-right {
+    top: 3px;
+    right: 3px;
+}
+
+.wapone-sticker.discount-product {
+    width: 66px;
+    border: #FFF 2px solid;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px #CCC;
+    text-align: center;
+    height: 60px;
+    padding: 10px 5px;
+}
+
+.product.media .wapone-sticker.discount-product {
+    width: 80px;
+    height: 74px;
+}
+
+.product.media .wapone-sticker-wrapper.top-right {
+    top: 13px;
+    right: 13px;
+}
+
+.wapone-sticker.discount-product.automatic {
+    font-size: 25px;
+}
+
+img.categoryDiscountImage {
+    width: 60px;
+}
+img.productDiscountImage {
+    width: 100px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .wapone-sticker {
+        font-size: 12px;
+    }
+    .wapone-sticker.discount-product {
+        width: 50px;
+        height: 38px;
+        padding: 12px 5px;
+    }
+    .product.media .wapone-sticker-wrapper.top-right {
+        top: 10px;
+        right: 10px;
+    }
+    .product.media .wapone-sticker.discount-product {
+        width: 70px;
+        height: 58px;
+        line-height: 16px;
+    }
+}
