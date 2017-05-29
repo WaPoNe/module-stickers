@@ -27,8 +27,8 @@ php bin/magento setup:static-content:deploy
 4. Select *Discount Product Category* (one or more) where to apply sticker (used only for **Manual** case)
 5. Select *Sticker Type* (**Image** or **Custom Label**)
 6. Upload the discount image
-7. Set *First Label* (used for **Manual** and **Custom Label** case)
-8. Set *Second Label* (used for **Manual** and **Custom Label** case)
+7. Set *Label, first row* (used for **Manual** and **Custom Label** case)
+8. Set *Label, second row* (used for **Manual** and **Custom Label** case)
 9. Set *Sticker Background Color* (used for **Custom Label** case)
 10. Set *Sticker Text Color* (used for **Custom Label** case)
 
