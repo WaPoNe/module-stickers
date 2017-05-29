@@ -1,4 +1,4 @@
-<img src="doc/images/stickers-logo.png" align="left" height="100px" width="100px" /> **WaPoNe Stickers** is a Magento 2 extension to provide product image stickers visible everywhere in the store (category page, product page, result page, related/upsell/crossell, widget). **Depending on the theme installed, it could need some style improvements.**
+<img src="https://cloud.githubusercontent.com/assets/11091926/26554296/af22071a-448f-11e7-8f33-31f5f9141228.png" align="left" height="100px" width="100px" /> **WaPoNe Stickers** is a Magento 2 extension to provide product image stickers visible everywhere in the store (category page, product page, result page, related/upsell/crossell, widget). **Depending on the theme installed, it could need some style improvements.**
 
 <br />
 
@@ -19,7 +19,7 @@ php bin/magento setup:static-content:deploy
 ### Configuring extension
 
 1. Go to STORES - WAPONE - Stickers.
-![](doc/images/wapone_stickers_configuration.png)
+![](https://cloud.githubusercontent.com/assets/11091926/26554594/3c741f12-4491-11e7-9d70-f49402868277.png)
 2. Set *Activation* to 'YES'.
 3. You have to decide to use *Manual* or *Automatic* as *Discount Calculation* 
 (**Manual**: it will be shown discount image or discount label ** - **
