@@ -1,4 +1,6 @@
-<img src="https://cloud.githubusercontent.com/assets/11091926/26554296/af22071a-448f-11e7-8f33-31f5f9141228.png" align="left" height="100px" width="100px" /> **WaPoNe Stickers** is a Magento 2 extension to provide product image stickers visible everywhere in the store (category page, product page, result page, related/upsell/crossell, widget). **Depending on the theme installed, it could need some style improvements.**
+<img src="https://cloud.githubusercontent.com/assets/11091926/26554296/af22071a-448f-11e7-8f33-31f5f9141228.png" align="left" height="100px" width="100px" /> **WaPoNe Stickers** is a Magento 2 extension to provide product image stickers visible everywhere in the store (category page, product page, result page, related/upsell/crossell, widget).
+
+**Depending on the theme installed, it could need some style improvements.**
 
 <br />
 
@@ -31,6 +33,25 @@ php bin/magento setup:static-content:deploy
 8. Set *Label, second row* (used for **Manual** and **Custom Label** case)
 9. Set *Sticker Background Color* (used for **Custom Label** case)
 10. Set *Sticker Text Color* (used for **Custom Label** case)
+
+### Annotations
+
+The extension has been tested using Luma Thema, the default Magento 2 theme; since its operation depends on some DOM elements (it works with javascript), it might happen that some code changes need for those themes with different DOM structure.
+You have to change jquery code in *<magento_dir>/vendor/wapone/module-stickers/view/frontend/web/js/categoryPageDiscount.js* for category page and *<magento_dir>/vendor/wapone/module-stickers/view/frontend/web/js/viewPageDiscount.js* for product page.
+
+#### Example for category page:
+
+**Luma Theme**
+
+*$($(this).parent().parent().find("a").find("span").find("span")).prepend(self.options.imageTag.discountArea);*
+
+**Ultimo Theme**
+
+*$($(this).parent().parent().find("div.product-item-img").find("a.product-image")).prepend(self.options.imageTag.discountArea);*
+
+**Porto Theme**
+
+*$($(this).parent().parent().find("div.product-item-photo")).prepend(self.options.imageTag.discountArea);*
 
 ## Compability
 
