@@ -1,4 +1,13 @@
 <?php
+/**
+ * WaPoNe
+ *
+ * @category   WaPoNe
+ * @package    WaPoNe_Stickers
+ * @copyright  Copyright (c) 2017 WaPoNe (http://www.fantetti.net)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+
 if($block->isDiscountActive()):
     $discountImage = "<div class='wapone-sticker-wrapper top-right'>";
     $discountImage .= "<img class='categoryDiscountImage' alt='".__('Discount')."' src='".$this->getUrl('pub/media')."wapone/stickers/images/".$block->getStickerImage()."' />";

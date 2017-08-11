@@ -8,12 +8,13 @@
 
 ### Composer
 
-Run the following command in Magento 2 root folder
+Run the following commands in Magento 2 root folder
 
 ```
+php bin/magento maintenance:enable
 composer require wapone/module-stickers
 php bin/magento setup:upgrade
-php bin/magento setup:static-content:deploy
+php bin/magento maintenance:disable
 ```
 
 ## User Guide
