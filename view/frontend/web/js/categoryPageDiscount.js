@@ -19,19 +19,57 @@ define(
                     var self = this;
                     $(".categoryPageDiscount").each(function () {
                         if ($(this).val() == 1) {
+
+                            /**************/
+                            /* Luma theme */
+                            /**************/
                             $($(this).parent().parent().find("a").find("span").find("span"))
                                 .prepend(self.options.imageTag.discountImage);
-                            // Only for Ultimo theme
+
+                            /*************************/
+                            /* Only for Ultimo theme */
+                            /*************************/
+                            // Uncomment these two lines if you are using Ultimo theme
+                            /*
                             $($(this).parent().parent().find("div.product-item-img").find("a.product-image"))
                                 .prepend(self.options.imageTag.discountImage);
+                            */
+
+                            /************************/
+                            /* Only for Porto theme */
+                            /************************/
+                            // Uncomment these two lines if you are using Porto theme
+                            /*
+                            $($(this).parent().parent().find("div.product-item-photo"))
+                                .prepend(self.options.imageTag.discountImage);
+                            */
                         } else {
                             var discountAmount = $(this).val();
+
+                            /**************/
+                            /* Luma theme */
+                            /**************/
                             $($(this).parent().parent().find("a").find("span").find("span"))
                                 .prepend(self.options.imageTag.discountArea);
-                            // Only for Ultimo theme
+
+                            /*************************/
+                            /* Only for Ultimo theme */
+                            /*************************/
+                            // Uncomment these two lines if you are using Ultimo theme
+                            /*
                             $($(this).parent().parent().find("div.product-item-img").find("a.product-image"))
                                 .prepend(self.options.imageTag.discountArea);
+                            */
 
+                            /************************/
+                            /* Only for Porto theme */
+                            /************************/
+                            // Uncomment these two lines if you are using Porto theme
+                            /*
+                            $($(this).parent().parent().find("div.product-item-photo"))
+                                .prepend(self.options.imageTag.discountArea);
+                            */
+                            
                             $(".discount-product").html(discountAmount);
                         }
                     });
