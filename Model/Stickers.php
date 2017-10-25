@@ -85,7 +85,7 @@ class Stickers extends \Magento\Framework\Model\AbstractModel
         $percentage = number_format($finalPrice / $regularPrice * 100, 2);
         $discountPercentage = round(100 - $percentage);
 
-        return $discountPercentage."%";
+        return __("Up to")."<br />".$discountPercentage."%";
     }
 
     public function isStickerActive($stickerType)

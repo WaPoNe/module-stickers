@@ -50,7 +50,8 @@ define(
                             /* Luma theme */
                             /**************/
                             $($(this).parent().parent().find("a").find("span").find("span"))
-                                .prepend(self.options.imageTag.discountArea);
+                                .prepend(self.options.imageTag.discountArea)
+                                .find("div.discount-product").html(discountAmount);
 
                             /*************************/
                             /* Only for Ultimo theme */
@@ -58,7 +59,8 @@ define(
                             // Uncomment these two lines if you are using Ultimo theme
                             /*
                             $($(this).parent().parent().find("div.product-item-img").find("a.product-image"))
-                                .prepend(self.options.imageTag.discountArea);
+                                .prepend(self.options.imageTag.discountArea)
+                                .find("div.discount-product").html(discountAmount);
                             */
 
                             /************************/
@@ -67,10 +69,9 @@ define(
                             // Uncomment these two lines if you are using Porto theme
                             /*
                             $($(this).parent().parent().find("div.product-item-photo"))
-                                .prepend(self.options.imageTag.discountArea);
+                                .prepend(self.options.imageTag.discountArea)
+                                .find("div.discount-product").html(discountAmount);
                             */
-                            
-                            $(".discount-product").html(discountAmount);
                         }
                     });
                 }
