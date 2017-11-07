@@ -11,9 +11,7 @@
 -->
 
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-    <body>
-        <referenceContainer name="footer">
-            <block class="WaPoNe\Stickers\Block\Config" template="WaPoNe_Stickers::js.phtml"/>
-        </referenceContainer>
-    </body>
+    <head>
+        <link src="WaPoNe_Stickers::js/validation.js"/>
+    </head>
 </page>
