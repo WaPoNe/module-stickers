@@ -58,3 +58,4 @@ You have to change jquery code in *<magento_dir>/vendor/wapone/module-stickers/v
 
 - Magento CE:
   - 2.1.x
+  - 2.2.x
