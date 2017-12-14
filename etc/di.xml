@@ -15,6 +15,10 @@
         <plugin name="WaPoNe_WidgetStickersPlugin"
                 type="WaPoNe\Stickers\Plugin\Catalog\Widget\StickersPlugin" />
     </type>
+    <type name="Magento\Catalog\Block\Product\Widget\NewWidget">
+        <plugin name="WaPoNe_NewWidgetStickersPlugin"
+                type="WaPoNe\Stickers\Plugin\Catalog\NewWidget\StickersPlugin" />
+    </type>
     <!--type name="Magento\Catalog\Block\Product\ListProduct">
         <plugin name="WaPoNe_CategoryStickersPlugin" type="WaPoNe\Stickers\Plugin\CategoryStickersPlugin"/>
     </type-->
